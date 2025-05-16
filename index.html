@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Migração Rural-Urbana: Consequências Sociais</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Arial', sans-serif;
+        }
+
+        body {
+            background-color: #f4f1e9;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        /* Navegação */
+        nav {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            background: linear-gradient(to right, #ed060a, #4682b4);
+            padding: 15px 0;
+            z-index: 1000;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+
+        nav ul li a:hover {
+            color: #f4f1e9;
+        }
+
+        /* Cabeçalho */
+        header {
+            height: 100vh;
+            background: url('https://images.unsplash.com/photo-1518609878373-06d740f60d8b') no-repeat center/cover;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            color: white;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+        }
+
+        header h1 {
+            font-size: 3.5rem;
+            margin-bottom: 20px;
+        }
+
+        header p {
+            font-size: 1.2rem;
+            max-width: 600px;
+        }
+
+        /* Seções */
+        section {
+            padding: 60px 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        section h2 {
+            font-size: 2.5rem;
+            color: #10f205;
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        section p {
+            font-size: 1.1rem;
+            margin-bottom: 20px;
+            text-align: justify;
+        }
+
+        /* Carrossel */
+        .carousel {
+            display: flex;
+            overflow-x: auto;
+            gap: 20px;
+            padding: 20px 0;
+            scroll-snap-type: x mandatory;
+        }
+
+        .carousel img {
+            width: 300px;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 10px;
+            scroll-snap-align: start;
+            transition: transform 0.3s;
+        }
+
+        .carousel img:hover {
+            transform: scale(1.05);
+        }
+
+        /* Botão */
+        .cta-button {
+            display: block;
+            margin: 30px auto;
+            padding: 15px 30px;
+            background-color: #4682b4;
+            color: white;
+            text-align: center;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+            transition: background-color 0.3s;
+        }
+
+        .cta-button:hover {
+            background-color: #1731de;
+        }
+
+        /* Rodapé */
+        footer {
+            background-color: #17881b;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+
+        footer p {
+            font-size: 0.9rem;
+        }
+
+        /* Responsividade */
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 2.5rem;
+            }
+
+            section h2 {
+                font-size: 2rem;
+            }
+
+            .carousel img {
+                width: 200px;
+                height: 150px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Navegação -->
+    <nav>
+        <ul>
+            <li><a href="#home">Início</a></li>
+            <li><a href="#causas">Causas</a></li>
+            <li><a href="#consequencias">Consequências</a></li>
+            <li><a href="#solucoes">Soluções</a></li>
+        </ul>
+    </nav>
+
+    <!-- Cabeçalho -->
+    <header id="home">
+        <div>
+            <h1>Migração Rural-Urbana</h1>
+            <p>Entenda as causas, consequências e impactos sociais desse fenômeno global.</p>
+        </div>
+    </header>
+
+    <!-- Seção Causas -->
+    <section id="causas">
+        <h2>Causas da Migração</h2>
+        <p>A migração rural-urbana ocorre devido a fatores como a busca por melhores condições de vida, acesso à educação, saúde e empregos. A mecanização agrícola, a falta de infraestrutura no campo e os desequilíbrios econômicos regionais também impulsionam esse movimento.</p>
+        <p>Além disso, mudanças climáticas e desastres naturais têm forçado populações rurais a abandonarem suas terras em busca de segurança nas cidades.</p>
+    </section>
+
+    <!-- Seção Consequências -->
+    <section id="consequencias">
+        <h2>Consequências Sociais</h2>
+        <p>A migração rural-urbana gera superpopulação nas cidades, aumento das desigualdades sociais, precariedade habitacional e pressão sobre serviços públicos. Muitas vezes, os migrantes enfrentam discriminação e dificuldades de integração.</p>
+        <p>No campo, a migração provoca o envelhecimento da população rural, abandono de terras agrícolas e perda de tradições culturais.</p>
+        <div class="carousel">
+            <img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e" alt="Favelas urbanas">
+            <img src="https://images.unsplash.com/photo-1506748686214-e9df14d4d9d0" alt="Cidade superlotada">
+            <img src="https://images.unsplash.com/photo-1477959858617-67f85cf4f1df" alt="Campo abandonado">
+        </div>
+    </section>
+
+    <!-- Seção Soluções -->
+    <section id="solucoes">
+        <h2>Soluções Possíveis</h2>
+        <p>Investir em infraestrutura rural, como estradas, escolas e hospitais, pode reduzir a migração. Políticas de desenvolvimento sustentável, apoio à agricultura familiar e incentivos fiscais para empresas no interior também são estratégias eficazes.</p>
+        <p>Nas cidades, é essencial melhorar o planejamento urbano, oferecer habitação acessível e promover a inclusão social dos migrantes.</p>
+        <a href="#home" class="cta-button">Saiba Mais</a>
+    </section>
+
+    <!-- Rodapé -->
+    <footer>
+        <p>&copy; 2025 - Migração Rural-Urbana: Consequências Sociais. Produzido por Guilherme Portela C.Todos os direitos reservados.</p>
+    </footer>
+</body>
+</html>
